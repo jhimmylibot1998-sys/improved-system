@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { 
+      width: 1280px; 
+      min-height: 720px; 
+      background: #0A0A0C; 
+      color: #F0F0F2;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex; 
+      flex-direction: column;
+      padding: 64px;
+      position: relative;
+    }
+    .motif {
+      position: absolute;
+      top: 64px;
+      right: 64px;
+      color: #CCFF00;
+      font-family: 'Syne', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+    }
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .eyebrow {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #8A8A93;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: 84px;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 900px;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #00E5FF, #9D4EDD);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .subtitle {
+      font-size: 24px;
+      color: #8A8A93;
+      margin-top: 40px;
+      max-width: 600px;
+      line-height: 1.4;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      color: #8A8A93;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif">+</div>
+    <div class="content">
+      <div class="eyebrow">Alex Morgan · Independent Studio</div>
+      <h1>Ideas into <span class="gradient-text">intelligent</span> experiences.</h1>
+      <p class="subtitle">Cinematic AI video direction and practical automation systems for ambitious brands.</p>
+    </div>
+    <div class="footer">
+      <div>01</div>
+      <div>2026 Client Services Proposal</div>
+    </div>
+  </div>
+</body>
+</html>

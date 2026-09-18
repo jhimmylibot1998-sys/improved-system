@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { 
+      width: 1280px; 
+      min-height: 720px; 
+      background: #0A0A0C; 
+      color: #F0F0F2;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex; 
+      flex-direction: column;
+      padding: 64px;
+      position: relative;
+    }
+    .motif { position: absolute; top: 64px; right: 64px; color: #CCFF00; font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 800; }
+    h2 { font-family: 'Syne', sans-serif; font-size: 36px; margin-bottom: 60px; letter-spacing: -0.02em; }
+    .content { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .column h3 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.15em; color: #8A8A93; margin-bottom: 24px; border-bottom: 1px solid #2A2A2E; padding-bottom: 12px; }
+    .column p { font-size: 24px; line-height: 1.5; margin-bottom: 32px; }
+    .highlight { color: #00E5FF; font-weight: 700; }
+    .footer { display: flex; justify-content: space-between; color: #8A8A93; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif">+</div>
+    <h2>The gap between ideas and execution</h2>
+    <div class="content">
+      <div class="column">
+        <h3>The Problem</h3>
+        <p>Strong ideas often lose momentum when <span class="highlight">content production</span> and <span class="highlight">operations</span> are disconnected.</p>
+        <p>Traditional workflows are too slow for the speed of modern attention, and too manual to scale without burnout.</p>
+      </div>
+      <div class="column">
+        <h3>The Cost</h3>
+        <p>Inconsistent brand presence, missed market opportunities, and high operational overhead from repetitive manual tasks.</p>
+        <p>You need a system that creates <span class="highlight">momentum</span>, not just assets.</p>
+      </div>
+    </div>
+    <div class="footer"><div>02</div></div>
+  </div>
+</body>
+</html>

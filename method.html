@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { 
+      width: 1280px; 
+      min-height: 720px; 
+      background: #0A0A0C; 
+      color: #F0F0F2;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex; 
+      flex-direction: column;
+      padding: 64px;
+      position: relative;
+    }
+    .motif { position: absolute; top: 64px; right: 64px; color: #CCFF00; font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 800; }
+    h2 { font-family: 'Syne', sans-serif; font-size: 36px; margin-bottom: 60px; }
+    .content { flex: 1; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .step { border-top: 1px solid #2A2A2E; padding-top: 32px; }
+    .step-num { font-family: 'Syne', sans-serif; font-size: 14px; color: #CCFF00; margin-bottom: 24px; }
+    .step h3 { font-size: 24px; margin-bottom: 16px; }
+    .step p { color: #8A8A93; font-size: 16px; line-height: 1.5; }
+    .footer { display: flex; justify-content: space-between; color: #8A8A93; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif">+</div>
+    <h2>A clear path from spark to system</h2>
+    <div class="content">
+      <div class="step">
+        <div class="step-num">STEP 01</div>
+        <h3>Align</h3>
+        <p>We define the creative vision and operational goals to ensure every output serves the business objective.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">STEP 02</div>
+        <h3>Design</h3>
+        <p>We map the visual language or workflow logic, creating the blueprint for the final experience.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">STEP 03</div>
+        <h3>Build</h3>
+        <p>We produce the AI assets or implement the automation logic using industry-leading tools.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">STEP 04</div>
+        <h3>Enable</h3>
+        <p>We deliver the final assets or hand over the system with full documentation and training.</p>
+      </div>
+    </div>
+    <div class="footer"><div>06</div></div>
+  </div>
+</body>
+</html>

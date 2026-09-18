@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { 
+      width: 1280px; 
+      min-height: 720px; 
+      background: #0A0A0C; 
+      color: #F0F0F2;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex; 
+      flex-direction: column;
+      padding: 64px;
+      position: relative;
+    }
+    .motif { position: absolute; top: 64px; right: 64px; color: #CCFF00; font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 800; }
+    h2 { font-family: 'Syne', sans-serif; font-size: 36px; margin-bottom: 40px; }
+    .content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+    .diagram { display: flex; align-items: center; justify-content: space-between; position: relative; padding: 40px 0; }
+    .diagram::before { content: ''; position: absolute; top: 50%; left: 5%; right: 5%; height: 1px; background: #2A2A2E; z-index: 0; }
+    .node { z-index: 1; background: #1A1A1D; border: 1px solid #CCFF00; padding: 24px; width: 220px; text-align: center; border-radius: 4px; }
+    .node strong { display: block; font-size: 18px; margin-bottom: 8px; color: #CCFF00; }
+    .node span { font-size: 14px; color: #8A8A93; }
+    .outcomes { margin-top: 80px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+    .outcome h4 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: #8A8A93; margin-bottom: 12px; }
+    .outcome p { font-size: 18px; line-height: 1.4; }
+    .footer { display: flex; justify-content: space-between; color: #8A8A93; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif">+</div>
+    <h2>Automation Workflow Design</h2>
+    <div class="content">
+      <div class="diagram">
+        <div class="node"><strong>Intake</strong><span>Lead/Data Capture</span></div>
+        <div class="node"><strong>Process</strong><span>Logic & Routing</span></div>
+        <div class="node"><strong>Execute</strong><span>Task Completion</span></div>
+        <div class="node"><strong>Report</strong><span>Insight Delivery</span></div>
+      </div>
+      <div class="outcomes">
+        <div class="outcome"><h4>Efficiency</h4><p>Reduce manual handling by up to 80% across core operations.</p></div>
+        <div class="outcome"><h4>Scalability</h4><p>Systems that grow with your volume without adding headcount.</p></div>
+        <div class="outcome"><h4>Accuracy</h4><p>Eliminate human error in data entry and repetitive handoffs.</p></div>
+      </div>
+    </div>
+    <div class="footer"><div>05</div></div>
+  </div>
+</body>
+</html>

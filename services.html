@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { 
+      width: 1280px; 
+      min-height: 720px; 
+      background: #0A0A0C; 
+      color: #F0F0F2;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex; 
+      flex-direction: column;
+      padding: 64px;
+      position: relative;
+    }
+    .motif { position: absolute; top: 64px; right: 64px; color: #CCFF00; font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 800; }
+    h2 { font-family: 'Syne', sans-serif; font-size: 36px; margin-bottom: 60px; }
+    .content { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .service-card { background: #1A1A1D; padding: 48px; border: 1px solid #2A2A2E; display: flex; flex-direction: column; justify-content: space-between; }
+    .service-card h3 { font-family: 'Syne', sans-serif; font-size: 28px; margin-bottom: 20px; }
+    .service-card p { color: #8A8A93; font-size: 18px; line-height: 1.5; margin-bottom: 32px; }
+    .tag { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; padding: 6px 12px; border: 1px solid currentColor; display: inline-block; width: fit-content; }
+    .video-tag { color: #00E5FF; }
+    .workflow-tag { color: #CCFF00; }
+    .footer { display: flex; justify-content: space-between; color: #8A8A93; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif">+</div>
+    <h2>Two capabilities, one creative system</h2>
+    <div class="content">
+      <div class="service-card">
+        <div>
+          <div class="tag video-tag">Creative</div>
+          <h3>AI Video Direction</h3>
+          <p>Cinematic storytelling powered by generative technology. We turn abstract concepts into high-fidelity visual experiences that capture attention and build brand equity.</p>
+        </div>
+        <div style="font-size: 14px; color: #8A8A93;">01 / VISUALS</div>
+      </div>
+      <div class="service-card">
+        <div>
+          <div class="tag workflow-tag">Operational</div>
+          <h3>Automation Design</h3>
+          <p>Intelligent workflows that eliminate friction. We build custom systems that handle the heavy lifting of content operations, lead management, and data routing.</p>
+        </div>
+        <div style="font-size: 14px; color: #8A8A93;">02 / SYSTEMS</div>
+      </div>
+    </div>
+    <div class="footer"><div>03</div></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slide-container { 
+      width: 1280px; 
+      min-height: 720px; 
+      background: #0A0A0C; 
+      color: #F0F0F2;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex; 
+      flex-direction: column;
+      padding: 64px;
+      position: relative;
+    }
+    .motif { position: absolute; top: 64px; right: 64px; color: #CCFF00; font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 800; }
+    h2 { font-family: 'Syne', sans-serif; font-size: 36px; margin-bottom: 40px; }
+    .content { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .work-item { background: #1A1A1D; border: 1px solid #2A2A2E; overflow: hidden; display: flex; flex-direction: column; }
+    .work-visual { height: 180px; background: #2A2A2E; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #8A8A93; text-transform: uppercase; letter-spacing: 0.1em; }
+    .work-visual.video { background: linear-gradient(135deg, #182f39, #241e3e); }
+    .work-visual.workflow { background: linear-gradient(135deg, #24251c, #191c2d); }
+    .work-info { padding: 24px; flex: 1; }
+    .work-info h3 { font-size: 20px; margin-bottom: 8px; }
+    .work-info p { font-size: 14px; color: #8A8A93; line-height: 1.4; }
+    .work-tag { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: #00E5FF; margin-bottom: 12px; display: block; }
+    .footer { display: flex; justify-content: space-between; color: #8A8A93; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="motif">+</div>
+    <h2>Selected Work</h2>
+    <div class="content">
+      <div class="work-item">
+        <div class="work-visual video">AI Video</div>
+        <div class="work-info">
+          <span class="work-tag">Campaign Film</span>
+          <h3>Afterlight</h3>
+          <p>Atmospheric product storytelling built from generative scenes and motion direction.</p>
+        </div>
+      </div>
+      <div class="work-item">
+        <div class="work-visual workflow">Automation</div>
+        <div class="work-info">
+          <span class="work-tag" style="color: #CCFF00;">Operations</span>
+          <h3>Signal Flow</h3>
+          <p>A connected workflow that turns one idea into a ready-to-publish content queue.</p>
+        </div>
+      </div>
+      <div class="work-item">
+        <div class="work-visual video">AI Video</div>
+        <div class="work-info">
+          <span class="work-tag">Social Series</span>
+          <h3>Soft Machines</h3>
+          <p>A modular series exploring technology through tactile, human-centered imagery.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><div>07</div></div>
+  </div>
+</body>
+</html>
