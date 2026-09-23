@@ -10,22 +10,30 @@ if (menuToggle) {
 
 document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => nav?.classList.remove('mobile-open')));
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+} else {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+}
 
 const filterButtons = document.querySelectorAll('[data-filter]');
 const workCards = document.querySelectorAll('[data-category]');
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
-    filterButtons.forEach(item => item.classList.remove('active'));
+    filterButtons.forEach(item => {
+      item.classList.remove('active');
+      item.setAttribute('aria-selected', 'false');
+    });
     button.classList.add('active');
+    button.setAttribute('aria-selected', 'true');
     const filter = button.dataset.filter;
     workCards.forEach(card => {
       const show = filter === 'all' || card.dataset.category === filter;

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jhimmylibot1998-sys.github.io/improved-system/sitemap.xml
