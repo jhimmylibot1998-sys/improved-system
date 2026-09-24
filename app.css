@@ -20,3 +20,34 @@
 @media(max-width:620px){.contact-copy{margin-top:22px;line-height:1.75}.section{contain-intrinsic-size:620px}}
 
 .page-hero{padding:96px 0 76px}.page-hero h1{font-size:clamp(3.5rem,8vw,7.5rem);line-height:.88;letter-spacing:-.09em;max-width:900px;margin:22px 0 28px}.page-lede{max-width:620px;color:var(--muted);font-size:18px;line-height:1.75}.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.compact-grid{grid-template-columns:repeat(3,1fr)}.story-card{border:1px solid var(--line);background:var(--surface);min-height:360px;display:flex;flex-direction:column;transition:transform .25s var(--ease),border-color .25s ease,background .25s ease}.story-card:hover{transform:translateY(-5px);border-color:var(--lime);background:var(--surface-2)}.story-art{height:200px;position:relative;overflow:hidden;background:linear-gradient(135deg,#17333a,#27203a);padding:20px;color:var(--lime);font-family:"DM Mono",monospace;font-size:10px;letter-spacing:.1em}.story-art:before{content:"";position:absolute;width:230px;height:230px;border:1px solid currentColor;border-radius:50%;top:34px;left:30%;box-shadow:0 0 0 24px rgba(216,178,110,.05)}.story-art:after{content:"";position:absolute;width:90px;height:90px;border:1px solid var(--cyan);border-radius:50%;top:100px;left:46%;transform:translate(-50%,-50%);box-shadow:0 0 30px rgba(137,224,209,.25)}.story-art.alt{background:linear-gradient(135deg,#3a2b15,#15222b);color:var(--cyan)}.story-art.warm{background:linear-gradient(135deg,#4a2820,#181318);color:var(--orange)}.system-art:before{width:280px;height:1px;border:0;border-radius:0;background:currentColor;top:50%;left:10%;box-shadow:80px -34px 0 -0.5px currentColor,160px 28px 0 -0.5px currentColor}.system-art:after{width:42px;height:42px;border-radius:12px;top:calc(50% - 21px);left:22%;border-color:var(--cyan);box-shadow:80px -34px 0 -1px var(--surface),80px -34px 0 0 var(--cyan),160px 28px 0 -1px var(--surface),160px 28px 0 0 var(--cyan)}.story-copy{padding:24px}.story-copy h2{font-size:26px;letter-spacing:-.05em;margin:10px 0}.story-copy p{color:var(--muted);font-size:14px;line-height:1.75;margin:0 0 18px}.story-copy a{color:var(--lime);font-family:"DM Mono",monospace;font-size:11px;text-transform:uppercase;letter-spacing:.08em}.story-muted{color:var(--muted);font-family:"DM Mono",monospace;font-size:10px;text-transform:uppercase;letter-spacing:.08em}.compact-grid .story-card{min-height:240px}.compact-grid .story-copy h2{margin-top:14px}.compact-grid .step-num{color:var(--lime);font-family:"DM Mono",monospace;font-size:11px}.filter-row{display:flex;gap:8px;flex-wrap:wrap}@media(max-width:850px){.story-grid,.compact-grid{grid-template-columns:1fr 1fr}}@media(max-width:620px){.page-hero{padding:70px 0 58px}.page-hero h1{font-size:clamp(3.2rem,16vw,5.5rem)}.page-lede{font-size:15px}.story-grid,.compact-grid{grid-template-columns:1fr}.story-card{min-height:0}.story-art{height:180px}}
+
+
+/* AI Creative Technologist-inspired contact card */
+.contact-section { padding-top: 44px; }
+.contact-card { position: relative; display: grid; grid-template-columns: .92fr 1.08fr; gap: 48px; overflow: hidden; padding: 54px; border: 1px solid rgba(216,178,110,.36); background: linear-gradient(135deg, rgba(19,28,35,.98), rgba(12,16,23,.98)); }
+.contact-card__glow { position: absolute; width: 520px; height: 520px; right: -170px; top: -230px; border-radius: 50%; background: radial-gradient(circle, rgba(137,224,209,.14), transparent 68%); pointer-events: none; }
+.contact-card__content, .contact-card__form-wrap { position: relative; z-index: 1; }
+.contact-card__icon { display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 29px; border: 1px solid var(--lime); color: var(--lime); font-size: 20px; }
+.contact-card__content h2 { max-width: 520px; margin: 26px 0 20px; font-size: clamp(3.2rem, 6vw, 6.3rem); line-height: .92; letter-spacing: -.085em; }
+.contact-card__content h2 span { color: var(--lime); }
+.contact-card__content .contact-copy { max-width: 410px; margin: 0; font-size: 15px; line-height: 1.75; }
+.contact-card__details { display: grid; gap: 18px; max-width: 420px; margin-top: 34px; }
+.contact-card__details div { padding-top: 12px; border-top: 1px solid var(--line); }
+.contact-card__details span, .contact-card__form-head { display: block; color: var(--muted); font-family: "DM Mono", monospace; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.contact-card__details a, .contact-card__details strong { display: block; margin-top: 9px; color: var(--text); font-family: "DM Mono", monospace; font-size: 12px; font-weight: 400; }
+.contact-card__details a { color: var(--lime); }
+.contact-card__form-wrap { align-self: center; padding: 25px; border: 1px solid rgba(255,255,255,.16); background: rgba(7,10,15,.47); box-shadow: 0 24px 70px rgba(0,0,0,.23); }
+.contact-card__form-head { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 19px; border-bottom: 1px solid rgba(255,255,255,.15); }
+.contact-card__form-head .status { color: var(--lime); }
+.contact-form { margin-top: 23px; }
+.contact-form .field { gap: 9px; }
+.contact-form .field label { color: var(--lime); }
+.contact-form input, .contact-form textarea, .contact-form select { padding: 14px 13px; border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.035); font-family: Inter, sans-serif; font-size: 13px; }
+.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { border-color: var(--lime); background: rgba(216,178,110,.055); outline: none; box-shadow: 0 0 0 3px rgba(216,178,110,.08); }
+.contact-form textarea { min-height: 130px; }
+.contact-form select { color: var(--text); }
+.contact-form select option { background: var(--bg); color: var(--text); }
+.contact-form .form-note { margin-top: 2px; line-height: 1.5; }
+.contact-submit { margin-top: 3px; }
+@media(max-width:850px){.contact-card{grid-template-columns:1fr;gap:38px;padding:34px}.contact-card__content h2{font-size:clamp(3.4rem,14vw,6rem)}}
+@media(max-width:620px){.contact-card{padding:25px 20px}.contact-card__form-wrap{padding:18px}.contact-card__form-head{font-size:9px}}
