@@ -1,38 +1,21 @@
-# Portfolio Gallery Upload Guide
+# Portfolio Asset Upload Guide
 
-This portfolio includes two independent gallery pages plus matching sections in `index.html`:
+The portfolio includes a responsive homepage, a dedicated AI video gallery, and an automation workflow gallery. All pages share the same premium visual system through `app.css` and the shared interactions in `app.js`.
 
-- `ai-videos.html` — standalone AI videos gallery
-- `automation-workflows.html` — standalone automation workflows gallery
+## Asset locations
 
-The main `index.html` links to both standalone pages.
+Place video files in `assets/videos/` using `.mp4` or `.webm` formats. Place workflow references in `assets/workflows/` using `.pdf`, `.png`, or `.jpg` formats. Keep filenames lowercase, use hyphens instead of spaces, and use forward slashes in every HTML path.
 
-- `assets/videos/` for `.mp4` or `.webm` files
-- `assets/workflows/` for `.pdf`, `.png`, or `.jpg` workflow files
+The repository currently includes `assets/videos/my-ai-video.mp4`, which is linked from `ai-videos.html`. The workflow directory contains documentation only, so workflow cards currently show a request-based state until a real workflow file is added.
+
+## Add a new video
+
+Add the file to `assets/videos/`, then duplicate a card in `ai-videos.html`. Update the asset link, title, category, and description. Use `target="_blank"` with `rel="noopener"` for files that should open in a new browser tab.
+
+## Add a new workflow
+
+Add the file to `assets/workflows/`, then duplicate a card in `automation-workflows.html`. Update the link, title, category, and description. PDFs open directly in a new browser tab and work on GitHub Pages without a backend.
 
 ## Publish on GitHub Pages
 
-1. Rename `portfolio.html` to `index.html`.
-2. Upload `index.html` and the complete `assets` folder to the same repository.
-3. Put your video files in `assets/videos/`.
-4. Put your workflow files in `assets/workflows/`.
-5. In `index.html`, duplicate an existing card in the matching gallery and update:
-   - the `src` value for a video, or the `href` value for a workflow file;
-   - the project title, category, and description;
-   - the `poster` path for an optional video thumbnail;
-   - the `data-format`, `data-focus`, and `data-outcome` values used by the lightbox.
-6. Keep filenames lowercase, use hyphens instead of spaces, and make sure the path uses forward slashes.
-
-Example video path:
-
-```html
-assets/videos/my-new-video.mp4
-```
-
-Example workflow path:
-
-```html
-assets/workflows/my-new-workflow.pdf
-```
-
-The lightbox opens uploaded videos inside the website. Workflow PDFs open in a new browser tab from the preview modal, which works on GitHub Pages without a backend.
+Keep `index.html` at the repository root, push the complete repository to GitHub, then enable Pages from **Settings → Pages** using the `main` branch and repository root. No build step is required.
