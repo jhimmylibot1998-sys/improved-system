@@ -83,3 +83,16 @@
 .contact-success p { max-width: 590px; color: var(--muted); line-height: 1.55; margin: 0 0 23px; }
 .contact-success .contact-reset { margin-left: 12px; }
 @media(max-width:620px){.contact-form__row,.placeholder-contact-grid{grid-template-columns:1fr}.contact-success .contact-reset{margin-left:0}}
+
+
+/* Contact options copied from the AI Creative Technologist contact section */
+.contact-card__side { position: relative; z-index: 1; align-self: end; }
+.contact-card__side > div { display: grid; gap: 0; }
+.contact-card__side > div > span { display: block; margin-bottom: 12px; color: var(--muted); font: 10px "DM Mono", monospace; letter-spacing: .12em; text-transform: uppercase; }
+.contact-option { display: flex; align-items: center; gap: 10px; width: 100%; padding: 15px 0; border: 0; border-top: 1px solid rgba(255,255,255,.16); background: transparent; color: var(--text); text-align: left; font: 12px "DM Mono", monospace; transition: color .2s ease, padding-left .2s ease; }
+.contact-option:last-child { border-bottom: 1px solid rgba(255,255,255,.16); }
+.contact-option:hover, .contact-option:focus-visible { padding-left: 7px; color: var(--lime); outline: none; }
+.contact-option__icon { display: grid; place-items: center; width: 18px; height: 18px; color: var(--lime); font-size: 16px; }
+.contact-option__arrow { margin-left: auto; color: var(--lime); font-size: 16px; }
+.contact-card__side > p { max-width: 350px; margin: 20px 0 0; color: var(--muted); font-size: 11px; line-height: 1.65; }
+@media(max-width:850px){.contact-card__side{align-self:stretch}.contact-card__side > p{max-width:480px}}

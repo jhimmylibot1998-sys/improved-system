@@ -126,3 +126,9 @@ copyButton?.addEventListener('click', async () => {
     if (status) status.textContent = 'Copy was unavailable. You can submit the brief instead.';
   }
 });
+
+const contactOptions = document.querySelectorAll('.contact-option');
+contactOptions.forEach(option => option.addEventListener('click', () => {
+  document.querySelector('#contactForm')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  window.setTimeout(() => document.querySelector('#contactForm input[name="name"]')?.focus(), 450);
+}));
